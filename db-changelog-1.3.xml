@@ -24,7 +24,21 @@
 <changeSet id="insert3" author="bharath">
                         <sql>INSERT INTO employee_data VALUES ('1', 'Bharath', 'Kumar','MinfyTech','Hyderabad');
                         </sql>
-			<rollback>DELETE FROM employee_data WHERE EMP_ID = '1';
+                        <rollback>DELETE FROM employee_data WHERE EMP_ID = '1';
 </rollback>
 </changeSet>
+
+<changeSet id="2.1create2" author="bharath">
+                        <sql>CREATE TABLE minfy_data (
+                                    EMP_ID int,
+                                    LastName varchar(255),
+                                    FirstName varchar(255),
+                                    Address varchar(255),
+                                    City varchar(255)
+                                );
+                        </sql>
+			<rollback>DROP TABLE minfy_data;</rollback>
+</changeSet>
+
+
 </databaseChangeLog>
