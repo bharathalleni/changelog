@@ -43,6 +43,6 @@
                                 );
                         </sql>
 			<rollback>DROP TABLE person;</rollback>
-               </changeSet>
+        </changeSet>
 
 </databaseChangeLog>
