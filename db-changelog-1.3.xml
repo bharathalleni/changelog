@@ -37,8 +37,6 @@
                                     City varchar(255)
                                 );
                         </sql>
-			<rollback>DROP TABLE minfy_data;</rollback>
 </changeSet>
-
 
 </databaseChangeLog>
