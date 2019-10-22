@@ -46,7 +46,7 @@
         </createTable>
 </changeSet>
 
-<changeSet id="insert3" author="bharath">
+<changeSet id="insert4" author="bharath">
                         <sql>INSERT INTO employees VALUES ('1', 'Bharath', 'Kumar','MinfyTech','Hyderabad'),
                         ('2', 'Akhil', 'Kumar','MinfyTech','Hyderabad'),
                         ('3', 'Sam', 'Kumar','MinfyTech','Hyderabad'),
