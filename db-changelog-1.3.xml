@@ -46,4 +46,15 @@
         </createTable>
 </changeSet>
 
+<changeSet id="insert3" author="bharath">
+                        <sql>INSERT INTO employees VALUES ('1', 'Bharath', 'Kumar','MinfyTech','Hyderabad'),
+                        ('2', 'Akhil', 'Kumar','MinfyTech','Hyderabad'),
+                        ('3', 'Sam', 'Kumar','MinfyTech','Hyderabad'),
+                        ('4', 'Prakash', 'Sharma','MinfyTech','Hyderabad'),
+                        ('5', 'Bob', 'Alice','MinfyTech','Hyderabad');
+                        </sql>
+                        <rollback>DELETE FROM employee_data WHERE EMP_ID = '1';
+</rollback>
+</changeSet>
+
 </databaseChangeLog>
