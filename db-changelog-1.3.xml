@@ -64,8 +64,8 @@
                         ALTER TABLE employees
                                 ADD COLUMN phone VARCHAR(10),
                                 ADD COLUMN department VARCHAR(10),
-                                ADD COLUMN manager VARCHAR(10),
-                                ADD COLUMN experience VARCHAR(10);
+                                ADD COLUMN manager VARCHAR(10);
+                                
                         </sql>
 			<rollback>ALTER TABLE employees DROP COLUMN phone,
                         DROP COLUMN department,
