@@ -101,4 +101,11 @@
 			<rollback>DROP TABLE employee_marks1;</rollback>
 </changeSet>
 
+<changeSet id="insert5" author="bharath">
+                        <sql>INSERT INTO employee_marks1 VALUES ('2', '89', '45');
+                        </sql>
+                        <rollback>DELETE FROM employee_data WHERE EMP_ID = '1';
+</rollback>
+</changeSet>
+
 </databaseChangeLog>
