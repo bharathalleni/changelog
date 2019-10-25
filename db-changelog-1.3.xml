@@ -108,4 +108,17 @@
 </rollback>
 </changeSet>
 
+<changeSet id="1.3-modify2" author="bharath">
+                        <sql>
+                        CREATE TABLE minfy (
+                                    EMP_ID int,
+                                    LastName varchar(255),
+                                    FirstName varchar(255),
+                                    Address varchar(255),
+                                    Phone varchar(255)
+                                );
+                        </sql>
+			<rollback>DROP TABLE minfy;</rollback>
+</changeSet>
+
 </databaseChangeLog>
