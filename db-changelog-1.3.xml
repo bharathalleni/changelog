@@ -108,7 +108,7 @@
 </rollback>
 </changeSet>
 
-<changeSet id="1.3-modify2" author="bharath">
+<changeSet id="1.3-modify7" author="bharath">
                         <sql>
                         CREATE TABLE minfy (
                                     EMP_ID int,
