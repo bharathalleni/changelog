@@ -121,5 +121,4 @@
 			<rollback>DROP TABLE minfy;</rollback>
 </changeSet>
 
-
 </databaseChangeLog>
